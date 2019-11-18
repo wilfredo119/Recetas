@@ -2,6 +2,7 @@ package com.example.recetario_crud;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,13 @@ public class PrincipalActivity extends AppCompatActivity {
         lv_lista= (Button)findViewById(R.id.lv_lista);
         lista_1 = (Button)findViewById(R.id.Lista_1);
 
+        recetario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ventana = new Intent(getApplicationContext(),Main2Activity.class);
+                startActivity(ventana);
+            }
+        });
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,3 +50,4 @@ public class PrincipalActivity extends AppCompatActivity {
         });
     }
 }
+
