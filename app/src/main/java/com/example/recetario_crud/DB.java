@@ -1,6 +1,8 @@
 package com.example.recetario_crud;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -19,5 +21,21 @@ public class DB extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+    }
+    public String guardar(String nombre, String ingredientes, String categoria) {
+        String mensaje = "";
+        SQLiteDatabase database = this.getWritableDatabase();
+        ContentValues contenedor = new ContentValues();
+        contenedor.put("nombre", nombre);
+        contenedor.put("ingredientes", ingredientes);
+        contenedor.put("categoria", categoria);
+        try {
+            database.insertOrThrow("datos", null, contenedor);
+            mensaje = "Ingresado Correctamente";
+
+        } catch (SQLException e) {
+            mensaje = "Error, al Ingresar";
+        }
+        return mensaje;
     }
 }
