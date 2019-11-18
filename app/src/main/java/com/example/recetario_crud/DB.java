@@ -2,6 +2,7 @@ package com.example.recetario_crud;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -38,4 +39,26 @@ public class DB extends SQLiteOpenHelper {
         }
         return mensaje;
     }
+    public String[] buscar_reg(String buscar) {
+        String[] datos = new String[4];
+        SQLiteDatabase database = this.getWritableDatabase();
+        String q = "SELECT * FROM datos WHERE nombre= '" + buscar + "'";
+        Cursor registros = database.rawQuery(q, null);
+
+        if (registros.moveToFirst()) {
+            for (int i = 0; i < 3; i++){
+
+                datos[i] = registros.getString(i);
+
+
+            }
+            datos[3] = "encontrados " + buscar;
+
+
+        }else{
+
+            datos [3] = "no se encontro "+ buscar;
+        }
+        return datos;
+}
 }
