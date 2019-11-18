@@ -8,11 +8,15 @@
     tools:context=".Acerca_de"
     android:orientation="vertical">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#B90909"
+        android:textColor="#E0582C"
         android:textSize="25dp"
         android:textAlignment="center"
         android:text="Integrantes del Grupo" />
@@ -22,11 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="25dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:srcCompat="@drawable/developeru" />
 
         <TextView
             android:id="@+id/textView4"
@@ -37,10 +36,13 @@
             android:textSize="20dp"
             android:textColor="#000000"/>
     <ImageView
-        android:id="@+id/im_V"
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        app:srcCompat="@drawable/developeru" />
+        app:srcCompat="@drawable/wilfredo" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
 
     <TextView
         android:id="@+id/textVie4"
@@ -54,7 +56,10 @@
     android:id="@+id/im_V1"
     android:layout_width="match_parent"
     android:layout_height="90dp"
-    app:srcCompat="@drawable/developeru" />
+    app:srcCompat="@drawable/damian" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
 
     <TextView
         android:id="@+id/textVi4"
@@ -68,15 +73,22 @@
     android:id="@+id/im_V2"
     android:layout_width="match_parent"
     android:layout_height="90dp"
-    app:srcCompat="@drawable/developeru" />
+    app:srcCompat="@drawable/cesar" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
 
     <TextView
         android:id="@+id/textV4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Francisco Cordoba"
+        android:text="Francisco Cordova"
         android:textAlignment="center"
         android:textSize="20dp"
         android:textColor="#000000"/>
-
+    <ImageView
+        android:id="@+id/im_V4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/fran" />
 </LinearLayout>
