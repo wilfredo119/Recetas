@@ -21,10 +21,20 @@
         android:textAlignment="center"
         android:text="Integrantes del Grupo" />
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <Space
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
 
 
         <TextView
@@ -35,60 +45,67 @@
             android:textAlignment="center"
             android:textSize="20dp"
             android:textColor="#000000"/>
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:srcCompat="@drawable/wilfredo" />
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/wilfredo" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
 
-    <TextView
-        android:id="@+id/textVie4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Damián Martinez"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#000000"/>
-    <ImageView
-    android:id="@+id/im_V1"
-    android:layout_width="match_parent"
-    android:layout_height="90dp"
-    app:srcCompat="@drawable/damian" />
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/textVie4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Damián Martinez"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <ImageView
+            android:id="@+id/im_V1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/damian" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
 
-    <TextView
-        android:id="@+id/textVi4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cesar Cruz"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#000000"/>
-    <ImageView
-    android:id="@+id/im_V2"
-    android:layout_width="match_parent"
-    android:layout_height="90dp"
-    app:srcCompat="@drawable/cesar" />
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/textVi4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cesar Cruz"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <ImageView
+            android:id="@+id/im_V2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/cesar" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
 
-    <TextView
-        android:id="@+id/textV4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Francisco Cordova"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#000000"/>
-    <ImageView
-        android:id="@+id/im_V4"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:srcCompat="@drawable/fran" />
+        <TextView
+            android:id="@+id/textV4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Francisco Cordova"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <ImageView
+            android:id="@+id/im_V4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/fran" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</ScrollView>
 </LinearLayout>
