@@ -38,5 +38,6 @@
                 android:textAlignment="center"
                 />
         </LinearLayout>
+
     </ScrollView>
 </LinearLayout>
