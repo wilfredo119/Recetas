@@ -24,7 +24,7 @@ public class Recicler_View extends AppCompatActivity {
 
       ListDatos= new ArrayList<String>();
 
-      for (int i=0;i<=10;i++){
+      for (int i=0;i<=15;i++){
           ListDatos.add("datos de recetas # "+i+" ");
         }
         AdapterDatos adapter = new AdapterDatos(ListDatos);
