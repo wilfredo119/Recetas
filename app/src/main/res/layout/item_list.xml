@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Mensaje"
-        android:textColor="#000000"
+        android:textColor="#AF1313"
         android:textSize="25dp"/>
 
 </LinearLayout>
