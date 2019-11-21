@@ -121,6 +121,17 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/estiloboton"
+            android:onClick="limpiarDatos"
+            android:text="Limpiar"
+            android:textSize="15dp" />
         <Space
             android:layout_width="match_parent"
             android:layout_height="25dp" />
