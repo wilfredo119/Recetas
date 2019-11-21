@@ -35,7 +35,9 @@
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/darker_gray"
         android:hint="Introduzca el nombre del recetario" />
-
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
