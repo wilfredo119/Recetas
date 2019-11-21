@@ -44,4 +44,10 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
     }
+    public void limpiarDatos(View view) {
+        tv_nombre.setText(null);
+        tv_ingredientes.setText(null);
+        tv_categoria.setText(null);
+        Ebuscar.setText(null);
+    }
 }
