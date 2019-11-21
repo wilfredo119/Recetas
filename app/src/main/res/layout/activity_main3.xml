@@ -17,9 +17,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:text="Lista De Recetas"
+        android:text="Lista de Recetas"
         android:textAlignment="center"
-        android:textColor="#E0582C"
+        android:textColor="#E04E1F"
         android:textSize="25dp" />
 
     <ScrollView
